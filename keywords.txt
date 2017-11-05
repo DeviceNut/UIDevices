@@ -1,0 +1,57 @@
+#######################################
+# Syntax Coloring Map For UIDevices
+####################################### 
+# Class
+#######################################
+
+UIDeviceAnalog	KEYWORD1
+UIDeviceButton	KEYWORD1
+UIDeviceEncoder	KEYWORD1
+UIDeviceSwitch	KEYWORD1
+
+#######################################
+# Methods and Functions 
+#######################################	
+
+#Analog
+CheckForChange	KEYWORD2
+newValue	KEYWORD2
+Platform_ReadPin	KEYWORD2
+
+#Button:
+msecsPressed	KEYWORD2
+CheckForChange	KEYWORD2
+Platform_InitPin	KEYWORD2
+Platform_IsPressed	KEYWORD2
+Platform_GetTime	KEYWORD2
+
+#Encoder:
+GetChangeCount	KEYWORD2
+HandleInterrupt	KEYWORD2
+Platform_InitPin	KEYWORD2
+Platform_ReadPin	KEYWORD2
+EncoderISR	KEYWORD2
+
+#Switch
+msecsStable	KEYWORD2
+CheckForChange	KEYWORD2
+newValue	KEYWORD2
+Platform_InitPin	KEYWORD2
+Platform_IsLow	KEYWORD2
+Platform_GetTime	KEYWORD2
+
+#######################################
+# Constants
+#######################################
+
+NOT_ARDUINO	LITERAL1
+
+#Analog
+MAX_ANALOG_VALUE	LITERAL1
+
+#Button:
+Retcode_NoChange	LITERAL1
+Retcode_Single	LITERAL1
+Retcode_Double	LITERAL1
+Retcode_LPress	LITERAL1
+Retcode_Repeat	LITERAL1
