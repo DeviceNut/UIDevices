@@ -7,7 +7,11 @@
 #ifndef UIDEVICE_ANALOG_H
 #define UIDEVICE_ANALOG_H
 
+#if defined(SPARK)
+#define MAX_ANALOG_VALUE 2047
+#else
 #define MAX_ANALOG_VALUE 1023
+#endif
 
 class UIDeviceAnalog
 {
