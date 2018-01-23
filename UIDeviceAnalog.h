@@ -8,7 +8,7 @@
 #define UIDEVICE_ANALOG_H
 
 #if defined(SPARK)
-#define MAX_ANALOG_VALUE 2047
+#define MAX_ANALOG_VALUE 4095
 #else
 #define MAX_ANALOG_VALUE 1023
 #endif
