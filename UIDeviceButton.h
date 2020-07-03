@@ -21,8 +21,8 @@ public:
   };
 
   // initialize processor pin and optionally override default settings
-  // (note that disabling long presses also disables repeating as well)
-  UIDeviceButton(uint8_t pin, bool dblclick = false, bool dorepeat = false, bool dolpress = true, bool pressval = 0)
+  // (note that long presses must be enabled to enable repeating)
+  UIDeviceButton(uint8_t pin, bool dblclick = false, bool dolpress = false, bool dorepeat = false, bool pressval = 0)
                 : msecsStable(25)     // default time for debouncing
                 , msecsDouble(250)    // 1/4 second between presses
                 , msecsLPress(1000)   // 1 second for long press
