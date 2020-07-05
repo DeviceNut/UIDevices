@@ -50,7 +50,7 @@ public:
   }
 
   // Modify or override these calls to customize for your envionment.
-  #if NOT_ARDUINO_COMPATIBLE
+  #ifdef NOT_ARDUINO_COMPATIBLE
   virtual void Platform_InitPin(uint8_t pin) {}:
   virtual bool Platform_ReadPin(uint8_t pin) {};
   #else
