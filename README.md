@@ -3,7 +3,7 @@ UIDevices Library
 
 This library is a set of classes for controlling various types of physical controls: buttons, pots (analog), switches, encoders.
 
-The button class is particularly useful and powerful, allowing for the caller to specify whether or not to support double click, long press, and repeat functionality. The timings for these can also be adjusted by overwriting global variables.
+The button class is particularly useful and powerful, allowing the caller to specify if supporting double click, long press, and repeat functionality. The timings for these can also be adjusted by overwriting global variables.
 
 All of the code for the UIDevice classes are included in their
 respective .h files, and the platform dependent functions have
