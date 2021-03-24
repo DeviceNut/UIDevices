@@ -41,7 +41,7 @@ public:
   long newValue; // read to get new value if CheckForChange() returns true
 
   // Modify or override these calls to customize for your environment.
-  #if NOT_ARDUINO_COMPATIBLE
+  #ifdef NOT_ARDUINO_COMPATIBLE
   virtual uint16_t Platform_ReadPin(uint8_t pin) {}:
   #else
   uint16_t Platform_ReadPin(uint8_t pin) { return analogRead(pin); }
