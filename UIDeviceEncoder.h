@@ -1,13 +1,12 @@
 // User Interface Device Encoder Class
 // Handles rotary encoder devices.
-// Greg de Valois 2017
+// Greg de Valois 2021
 // www.devicenut.com
 // GPL Licence
 
 // Note: not all Arduino environments support 'digitalPinToInterrupt'.
 
-#ifndef UIDEVICE_ENCODER_H
-#define UIDEVICE_ENCODER_H
+#pragma once
 
 class UIDeviceEncoder
 {
@@ -68,5 +67,3 @@ private:
   int16_t _new_state;
   int8_t _states[16];
 };
-
-#endif // UIDEVICE_ENCODER_H

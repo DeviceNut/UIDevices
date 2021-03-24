@@ -1,11 +1,10 @@
 // User Interface Device Switch Class
 // Handles single throw switches.
-// Greg de Valois 2016
+// Greg de Valois 2021
 // www.devicenut.com
 // GPL Licence
 
-#ifndef UIDEVICE_SWITCH_H
-#define UIDEVICE_SWITCH_H
+#pragma once
 
 class UIDeviceSwitch
 {
@@ -65,5 +64,3 @@ private:
   bool _islow;        // true if switch state low
   uint32_t _lastime;  // time of last switch
 };
-
-#endif // UIDEVICE_SWITCH_H

@@ -1,11 +1,10 @@
 // User Interface Device Button Class
 // Handles momentary push button switches.
-// Greg de Valois 2017
+// Greg de Valois 2021
 // www.devicenut.com
 // GPL Licence
 
-#ifndef UIDEVICE_BUTTON_H
-#define UIDEVICE_BUTTON_H
+#pragma once
 
 class UIDeviceButton
 {
@@ -177,5 +176,3 @@ private:
     return rc;
   }
 };
-
-#endif // UIDEVICE_BUTTON_H

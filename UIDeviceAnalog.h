@@ -1,13 +1,12 @@
 // User Interface Device Analog Class
 // Handles devices with analog inputs, like pots.
-// Greg de Valois 2017
+// Greg de Valois 2021
 // www.devicenut.com
 // GPL Licence
 
-#ifndef UIDEVICE_ANALOG_H
-#define UIDEVICE_ANALOG_H
+#pragma once
 
-#if ESP32
+#if defined(ESP32)
 #define MAX_ANALOG_VALUE 4095
 #else
 #define MAX_ANALOG_VALUE 1023
@@ -57,5 +56,3 @@ private:
 
   long _mapvalue() { return ((Platform_ReadPin(_pin) * (_maxRetVal - _minRetVal)) / _maxReadVal) + _minRetVal; }
 };
-
-#endif // UIDEVICE_ANALOG_H
