@@ -6,7 +6,7 @@
 
 #pragma once
 
-#if defined(ESP32)
+#if defined(ESP32) || defined(PARTICLE)
 #define MAX_ANALOG_VALUE 4095
 #else
 #define MAX_ANALOG_VALUE 1023
