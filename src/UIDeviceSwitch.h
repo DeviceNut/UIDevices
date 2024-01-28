@@ -18,7 +18,7 @@ public:
                 , _lastime(0)         // initialize starting time
   {
     Platform_InitPin(_pin);
-    newValue = Platform_IsLow(_pin);  // set initial value
+    newValue = true;  // set default value
   }
 
   // Sets the timings for the state transistion, can override:

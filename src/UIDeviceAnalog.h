@@ -6,7 +6,7 @@
 
 #pragma once
 
-#if defined(ESP32) || defined(PARTICLE)
+#if defined(ESP32)
 #define MAX_ANALOG_VALUE 4095
 #else
 #define MAX_ANALOG_VALUE 1023
@@ -24,8 +24,7 @@ public:
                 , _minRetVal(minval)  // set min returned value
                 , _maxRetVal(maxval)  // set max returned value
   {
-    _dampValue = _mapvalue(); // set initial dampening value
-    CheckForChange(); // initialize output value with that
+    _dampValue = 0; // initialize value
   }
 
   bool CheckForChange(void) // returns true if there is a new value in newValue
